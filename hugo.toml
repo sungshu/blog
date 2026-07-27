@@ -1,0 +1,88 @@
+baseURL = 'https://sungshu.github.io/blog/'
+uglyURLs = true
+
+defaultContentLanguage = 'zh-hant-tw'
+title = 'sungshu手札筆記本'
+theme = 'hugo-theme-stack'
+hasCJKLanguage = true
+timeZone = 'Asia/Taipei'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[languages.zh-hant-tw]
+  locale = 'zh-Hant-TW'
+  label = '繁體中文'
+  weight = 1
+  title = 'sungshu手札筆記本'
+
+[params]
+  mainSections = ['posts']
+  customCSS = ['scss/custom.scss']
+  
+  [params.dateFormat]
+    published = "2006年01月02日"
+    lastUpdated = "2006年01月02日"
+    
+  [params.sidebar]
+    subtitle = '懶得寫 Blog，只是怕有一天會失憶。'
+    avatar = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiezvRxlmwkQUuhTBBT7ST_rAhyOD7S0C87E83XA8Wfim1QynMofXzO5GhsoXqifptJKF3s-Qub1BvOBdccP6xL8zKdV8biy4jmfU8MEVcmKjSE3R207DvLaRkpNnT1r1CT_xlnbO7bOPuiHWxOuUrLcee462lwfPpLVpS5Ibjgr_BDGA/s1600/Gemini_Generated_Image_tdds8stdds8stdds.png'
+  [params.footer]
+    since = 2026
+  [params.widgets]
+    homepage = [ { type = 'search' }, { type = 'archives' }, { type = 'categories' }, { type = 'tag-cloud' } ]
+
+[[menu.main]]
+  identifier = 'home'
+  name = '首頁'
+  url = '/'
+  weight = 1
+  [menu.main.params]
+    icon = 'home'
+[[menu.main]]
+  identifier = 'archives'
+  name = '歸檔'
+  url = '/page/archives.html'
+  weight = 2
+  [menu.main.params]
+    icon = 'archives'
+[[menu.main]]
+  identifier = 'search'
+  name = '搜尋'
+  url = '/page/search.html'
+  weight = 3
+  [menu.main.params]
+    icon = 'search'
+[[menu.main]]
+  identifier = 'about'
+  name = '關於我'
+  url = '/page/about.html'
+  weight = 4
+  [menu.main.params]
+    icon = 'user'
+[[menu.main]]
+  identifier = 'contact'
+  name = '聯絡我'
+  url = '/page/contact.html'
+  weight = 5
+  [menu.main.params]
+    icon = 'user'
+[[menu.main]]
+  identifier = 'privacy-policy'
+  name = '隱私權政策'
+  url = '/page/privacy-policy.html'
+  weight = 6
+  [menu.main.params]
+    icon = 'user'
+
+[pagination]
+  pagerSize = 10
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+[permalinks]
+  posts = '/posts/:year/:month/:slug'

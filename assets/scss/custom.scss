@@ -1,0 +1,56 @@
+/* ======================================================= */
+/* sungshu 手札筆記本 客製化樣式 (About / Contact / Privacy) */
+/* ======================================================= */
+/* 共用設定 */
+.v61-grid-layout, .v61-contact-layout, .v61-policy-wrap { font-family: 'Microsoft JhengHei', sans-serif; max-width: 950px; margin: 20px auto 40px; background: #ffffff; border: 1px solid #eef2f7; border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,0.06); overflow: hidden; }
+.v61-purple-border-title { border-bottom: 3px solid #6f42c1; display: inline-block; margin-bottom: 35px; }
+.v61-h2-text { font-size: 2.2em; color: #2c3e50; margin: 0; padding-bottom: 5px; font-weight: bold; }
+.v61-section-block { margin-bottom: 40px; }
+.v61-h3-style { font-size: 1.35em; color: #6f42c1; margin-bottom: 15px; display: flex; align-items: center; }
+.v61-section-block p { color: #555; line-height: 1.8; text-align: justify; margin: 0; }
+
+/* 關於我 (About) */
+.v61-grid-layout { display: grid; grid-template-columns: 280px 1fr; }
+.v61-grid-sidebar { background: #232d3b; color: #ffffff; padding: 60px 25px 45px; text-align: center; display: flex; flex-direction: column; }
+.v61-avatar-circle { width: 110px; height: 110px; border-radius: 50% !important; margin: 0 auto 20px; border: 3px solid rgba(255,255,255,0.2); box-shadow: 0 5px 15px rgba(0,0,0,0.3); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.v61-handle { font-size: 1.6em; font-weight: 900; letter-spacing: 1px; margin-bottom: 5px; color: #fff; }
+.v61-title { font-size: 0.95em; color: #a166ff; font-weight: bold; margin-bottom: 30px; }
+.v61-stats-grid { display: flex; justify-content: space-around; margin-bottom: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; }
+.v61-stat-item b { font-size: 1.3em; color: #a166ff; display: block; }
+.v61-stat-item small { font-size: 11px; opacity: 0.8; }
+.v61-skill-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.v61-skill-tags span { background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 50px; font-size: 12px; border: 1px solid rgba(255,255,255,0.15); white-space: nowrap; }
+.v61-grid-content { padding: 50px; background: #fff; min-width: 0; }
+.v61-quote-box { background: #f8f9fa; border-left: 5px solid #bdc3c7; padding: 18px 25px; margin: 15px 0; font-style: italic; color: #666; border-radius: 0 10px 10px 0; font-size: 0.95em; }
+
+/* 聯絡我 (Contact) */
+.v61-contact-layout { display: grid; grid-template-columns: 280px 1fr; }
+.v61-contact-side { background: #2c3e50; color: #ffffff; padding: 45px 25px; text-align: center; display: flex; flex-direction: column; }
+.v61-contact-icon { font-size: 50px; margin-bottom: 20px; }
+.v61-contact-header { font-size: 1.5em; font-weight: 900; margin-bottom: 30px; letter-spacing: 1px; }
+.v61-contact-info-block { text-align: left; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; }
+.v61-info-item { margin-bottom: 20px; }
+.v61-info-item small { display: block; font-size: 11px; color: #bdc3c7; text-transform: uppercase; margin-bottom: 4px; }
+.v61-info-item b { font-size: 14px; color: #a166ff; word-break: break-all; }
+.v61-contact-note { margin-top: auto; font-size: 11px; line-height: 1.6; color: #95a5a6; padding-top: 20px; }
+.v61-contact-main { padding: 50px; background: #fff; min-width: 0; }
+
+/* 隱私權 (Privacy) */
+.v61-policy-wrap { display: flex; flex-wrap: wrap; }
+.v61-policy-side { background: #34495e; color: #ffffff; padding: 45px 25px; flex: 1; min-width: 220px; text-align: center; }
+.v61-policy-icon { font-size: 50px; margin-bottom: 25px; }
+.v61-policy-status { margin-bottom: 25px; }
+.v61-status-tag { background: rgba(255,255,255,0.15); font-size: 11px; padding: 4px 10px; border-radius: 20px; margin-bottom: 6px; display: inline-block; }
+.v61-policy-index { list-style: none; padding: 0; margin: 0; text-align: left; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
+.v61-policy-index li { font-size: 13px; margin-bottom: 10px; color: #ecf0f1; opacity: 0.9; }
+.v61-policy-main { padding: 40px; flex: 3; min-width: 300px; background: #fff; }
+.v61-main-header { font-size: 1.8em; font-weight: bold; color: #2c3e50; border-bottom: 3px solid #34495e; padding-bottom: 10px; margin-bottom: 30px; }
+.v61-policy-section { margin-bottom: 30px; }
+.v61-policy-h3 { font-size: 1.25em; color: #2c3e50; margin-bottom: 10px; font-weight: bold; }
+.v61-alert-box { background: #fff3cd; border-left: 4px solid #ffc107; color: #856404; padding: 12px 15px; margin-bottom: 12px; font-size: 14px; border-radius: 4px; }
+.v61-policy-footer { border-top: 1px solid #eee; padding-top: 15px; font-size: 12px; color: #95a5a6; text-align: right; }
+
+@media (max-width: 768px) { 
+  .v61-grid-layout, .v61-contact-layout { grid-template-columns: 1fr; margin: 20px 0; } 
+  .v61-grid-content, .v61-contact-main { padding: 30px; } 
+}
